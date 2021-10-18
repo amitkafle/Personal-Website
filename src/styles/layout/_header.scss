@@ -2,7 +2,7 @@
 
 .header {
   position: sticky;
-  top: 0;
+  top: 0px;
   background-color: $clr-brand;
   color: $clr-neutral;
   display: flex;
@@ -13,6 +13,9 @@
   .logo {
     font-size: 2rem;
     font-weight: 600;
+    a{
+      color: $clr-neutral;
+    }
   }
 }
 
