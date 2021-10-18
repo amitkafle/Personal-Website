@@ -1,0 +1,138 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.home__buttons {
+  display: flex;
+  align-items: center;
+}
+.home .btn {
+  border-radius: 50px;
+  height: 60px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px 40px;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+.home .btn__primary {
+  background-color: #000000;
+  color: #ffffff;
+}
+.home .btn__neutral {
+  color: #000000;
+  border: 2px solid #000000;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 30px;
+}
+.skill h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 100px;
+  width: 100%;
+}
+.header .logo {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.nav ul li {
+  list-style: none;
+  font-size: 1.2rem;
+}
+.nav__links {
+  color: #ffffff;
+}
+
+.home {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+  height: 100vh;
+  max-height: 800px;
+  grid-template-columns: 50% 50%;
+}
+.home .intro__title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 2.24px;
+  line-height: 50px;
+  margin-bottom: 20px;
+  margin-top: -50px;
+}
+.home .intro__tagline {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.home .banner {
+  overflow: hidden;
+}
+.home .banner__img {
+  height: auto;
+  width: 100%;
+  max-width: 600px;
+  min-width: 400px;
+}
+
+.skills {
+  padding: 20px 100px;
+}
+.skills__card {
+  margin: 80px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  justify-content: space-between;
+  row-gap: 80px;
+}
+.skills__heading {
+  font-size: 2rem;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 20px;
+}
+.skills .skill img {
+  height: 125px;
+  width: 125px;
+}/*# sourceMappingURL=main.css.map */

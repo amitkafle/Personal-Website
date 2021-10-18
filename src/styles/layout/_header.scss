@@ -1,0 +1,33 @@
+@use "../base" as *;
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: $clr-brand;
+  color: $clr-neutral;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 100px;
+  width: 100%;
+  .logo {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}
+
+.nav {
+  ul {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+
+    li {
+      list-style: none;
+      font-size: 1.2rem;
+    }
+  }
+  &__links {
+    color: $clr-neutral;
+  }
+}
