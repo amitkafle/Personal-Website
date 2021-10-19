@@ -1,0 +1,27 @@
+@use "./typography" as *;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-family;
+  font-size: 1rem;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  width: min(100%, 70rem);
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}

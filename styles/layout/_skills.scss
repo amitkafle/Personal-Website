@@ -1,0 +1,25 @@
+@use "../base" as *;
+
+.skills {
+  padding: 5px 100px;
+  padding-top: 65px;
+  &__card {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    justify-content: space-between;
+    row-gap: 80px;
+  }
+
+  &__heading {
+    font-size: 2rem;
+    text-decoration: underline;
+    text-align: center;
+  }
+  .skill {
+    img {
+      height: 100px;
+      width: 100px;
+    }
+  }
+}

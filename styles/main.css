@@ -1,0 +1,252 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  width: min(100%, 70rem);
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.btn {
+  border-radius: 50px;
+  height: 50px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px 30px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.btn__primary {
+  background-color: #000000;
+  color: #ffffff;
+  border: 2px solid #000000;
+}
+.btn__primary:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
+}
+.btn__neutral {
+  color: #000000;
+  border: 2px solid #000000;
+}
+.btn__neutral:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.home__buttons {
+  display: flex;
+  align-items: center;
+}
+.home .btn {
+  margin-right: 50px;
+}
+
+.project__card {
+  width: min(90vw, 400px);
+}
+.project__info {
+  box-shadow: 0px 1px 20px #8a8a8a;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.project__image {
+  height: 300px;
+  width: 400px;
+  border-radius: 10px 10px 0 0;
+}
+.project__title {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 30px;
+}
+.skill h4 {
+  font-size: clamp(1rem, 1.2rem, 1.5rem);
+  font-weight: 500;
+}
+
+.contact {
+  display: grid;
+  place-items: center;
+}
+.contact__title {
+  font-size: 2rem;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+.contact__text {
+  text-align: center;
+  width: min(75%, 70rem);
+  font-size: 1.4rem;
+}
+.contact__text .highlight {
+  font-weight: 700;
+}
+.contact__menus {
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.contact__links {
+  height: 50px;
+  width: 50px;
+}
+
+.footer {
+  height: 80px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 1rem;
+  display: grid;
+  place-items: center;
+}
+
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 100px;
+  width: 100%;
+}
+.header .logo {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.header .logo a {
+  color: #ffffff;
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.nav ul li {
+  list-style: none;
+  font-size: 1.2rem;
+}
+.nav__links {
+  color: #ffffff;
+}
+
+.home {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  padding: 0 100px;
+  height: min(100vh, 750px);
+  width: 100%;
+  grid-template-columns: 50% 50%;
+}
+.home .intro {
+  justify-self: flex-start;
+}
+.home .intro__title {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2.24px;
+  line-height: 50px;
+  margin-bottom: 20px;
+  margin-top: -50px;
+}
+.home .intro__tagline {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.home .banner {
+  overflow: hidden;
+  display: flex;
+  justify-self: flex-end;
+  justify-content: flex-end;
+}
+.home .banner__img {
+  height: auto;
+  width: 90%;
+  max-width: 90%;
+  min-width: 400px;
+}
+
+.projects {
+  padding-top: 60px;
+}
+.projects__heading {
+  font-size: 2rem;
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  place-items: center;
+}
+.project__links {
+  padding: 30px 40px 10px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.skills {
+  padding: 5px 100px;
+  padding-top: 65px;
+}
+.skills__card {
+  margin: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  justify-content: space-between;
+  row-gap: 80px;
+}
+.skills__heading {
+  font-size: 2rem;
+  text-decoration: underline;
+  text-align: center;
+}
+.skills .skill img {
+  height: 100px;
+  width: 100px;
+}/*# sourceMappingURL=main.css.map */

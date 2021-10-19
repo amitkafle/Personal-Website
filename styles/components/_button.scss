@@ -1,0 +1,43 @@
+@use "../base" as *;
+
+.btn {
+  border-radius: 50px;
+  height: 50px;
+  width: max-content;
+  padding: 10px 30px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  &__primary {
+    background-color: $clr-brand;
+    color: $clr-neutral;
+    border: 2px solid $clr-brand;
+    &:hover {
+      background-color: $clr-neutral;
+      color: $clr-brand;
+      border: 2px solid $clr-brand;
+    }
+  }
+
+  &__neutral {
+    color: $clr-brand;
+    border: 2px solid $clr-brand;
+    &:hover {
+      background-color: $clr-brand;
+      color: $clr-neutral;
+    }
+  }
+}
+
+.home {
+  &__buttons {
+    display: flex;
+    align-items: center;
+  }
+  .btn {
+    margin-right: 50px;
+  }
+}

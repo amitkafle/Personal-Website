@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Amit Kafle - Frontend Developer" />
+    <title>Amit Kafle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="preload"
+      as="style"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="./styles/main.css" as="style" />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body id="home">
+    <div class="container">
+      <!--Header-->
+      <header class="header">
+        <h1 class="logo"><a href="#home">Amit Kafle</a></h1>
+        <nav class="nav">
+          <ul>
+            <a href="#home"> <li class="nav__links">Home</li> </a
+            ><a href="#skills"> <li class="nav__links">Skills</li> </a
+            ><a href="#projects"> <li class="nav__links">Projects</li> </a
+            ><a href="#contact">
+              <li class="nav__links">Contact</li>
+            </a>
+          </ul>
+        </nav>
+      </header>
+      <!--Header-->
+
+      <!--Home-->
+      <section class="home">
+        <div class="intro">
+          <h2 class="intro__title">Frontend Web<br />Developer</h2>
+          <p class="intro__tagline">
+            I help bring your design and ideas to life.
+          </p>
+          <div class="home__buttons">
+            <a href="#projects"
+              ><div class="btn btn__primary">My Projects</div></a
+            >
+            <a href="#skills"
+              ><div class="btn btn__neutral">Skills I Have</div></a
+            >
+          </div>
+        </div>
+        <div class="banner">
+          <img src="./images/banner.svg" alt="Designer" class="banner__img" />
+        </div>
+      </section>
+      <!--Home-->
+
+      <!--Skills-->
+      <section class="skills" id="skills">
+        <h3 class="skills__heading">SKILLS</h3>
+        <div class="skills__card">
+          <div class="skill">
+            <img src="./images/html5-plain.svg" alt="HTML" />
+            <h4>HTML</h4>
+          </div>
+          <div class="skill">
+            <img src="./images/css3-plain.svg" alt="CSS" />
+            <h4>CSS</h4>
+          </div>
+          <div class="skill">
+            <img src="./images/sass-original.svg" alt="Sass" />
+            <h4>Sass</h4>
+          </div>
+          <div class="skill">
+            <img src="./images/javascript-original.svg" alt="Javascript" />
+            <h4>Javascript</h4>
+          </div>
+          <div class="skill">
+            <img src="./images/git-plain.svg" alt="Git" />
+            <h4>Git</h4>
+          </div>
+          <div class="skill">
+            <img src="./images/github-original.svg" alt="Github" />
+            <h4>Github</h4>
+          </div>
+          <div class="skill">
+            <img src="./images/xd-line.svg" alt="Adobe XD" />
+            <h4>Adobe XD</h4>
+          </div>
+        </div>
+      </section>
+      <!--Skills-->
+
+      <!--Projects-->
+      <section id="projects" class="projects">
+        <h3 class="projects__heading">Projects</h3>
+        <div class="project">
+          <div class="project__card">
+            <div class="project__info">
+              <img
+                src="./images/frontendmentor.jpg"
+                alt="Frontend Mentor"
+                class="project__image"
+              />
+              <h3 class="project__title">Frontend Mentor Projects</h3>
+            </div>
+            <div class="project__links">
+              <a
+                href="https://github.com/amitkafle/Frontend-Mentor-Solutions"
+                target="_blank"
+              >
+                <div class="btn btn__primary">Github</div>
+              </a>
+              <a
+                href="https://www.frontendmentor.io/profile/amitkafle"
+                target="_blank"
+              >
+                <div class="btn btn__neutral">Profile</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="project__card">
+            <div class="project__info">
+              <img
+                src="./images/calculator.jpg"
+                alt="Calculator"
+                class="project__image"
+              />
+              <h3 class="project__title">Calculator</h3>
+            </div>
+            <div class="project__links">
+              <a
+                href="https://github.com/amitkafle/FEM-Calculator"
+                target="_blank"
+              >
+                <div class="btn btn__primary">Github</div>
+              </a>
+              <a
+                href="https://amitkafle.github.io/FEM-Calculator/"
+                target="_blank"
+              >
+                <div class="btn btn__neutral">Live Site</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Projects-->
+
+      <!--Contact-->
+      <section class="contact" id="contact">
+        <h3 class="contact__title">Contact</h3>
+        <p class="contact__text">
+          I am currently looking for a new role as a
+          <span class="highlight">Front End Developer</span>. Please feel free
+          to reach out if you are looking to fill a similar role in below
+          mentioned handles.
+        </p>
+        <div class="contact__menus">
+          <a target="_blank" href="https://github.com/amitkafle"
+            ><img
+              src="./images/Icon awesome-github.svg"
+              alt="Github"
+              class="contact__links" /></a
+          ><a target="_blank" href="https://twitter.com/amitkafle"
+            ><img
+              src="./images/Icon awesome-twitter.svg"
+              alt="Twitter"
+              class="contact__links" /></a
+          ><a target="_blank" href="mailto:amitkafleofficial@gmail.com"
+            ><img
+              src="./images/Icon material-email.svg"
+              alt="Email"
+              class="contact__links"
+          /></a>
+        </div>
+      </section>
+      <!--Contact-->
+
+      <footer class="footer">
+        <p class="footer_text">
+          Built using HTML, CSS and Vanilla Javascript by Amit Kafle
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

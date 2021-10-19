@@ -1,0 +1,22 @@
+@use "../base" as *;
+.project {
+  &__card {
+    width: min(90vw, 400px);
+  }
+
+  &__info {
+    box-shadow: 0px 1px 20px rgb(138, 138, 138);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  &__image {
+    height: 300px;
+    width: 400px;
+    border-radius: 10px 10px 0 0;
+  }
+  &__title {
+    text-align: center;
+    padding: 10px 0;
+  }
+}

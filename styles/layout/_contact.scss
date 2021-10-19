@@ -1,0 +1,33 @@
+.contact {
+  display: grid;
+  place-items: center;
+  &__title {
+    font-size: 2rem;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+  &__text {
+    text-align: center;
+    width: min(75%, 70rem);
+    font-size: 1.4rem;
+
+    .highlight {
+      font-weight: 700;
+    }
+  }
+
+  &__menus {
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  &__links {
+    height: 50px;
+    width: 50px;
+  }
+}
