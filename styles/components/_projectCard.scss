@@ -1,11 +1,11 @@
 @use "../base" as *;
 .project {
   &__card {
-    width: min(90vw, 400px);
+    width: 400px;
   }
 
   &__info {
-    box-shadow: 0px 1px 20px rgb(138, 138, 138);
+    box-shadow: 0px 2px 20px rgb(206, 206, 206);
     border-radius: 10px;
     overflow: hidden;
   }
@@ -18,5 +18,40 @@
   &__title {
     text-align: center;
     padding: 10px 0;
+  }
+}
+
+
+@include media('>=tablet', '<=985px'){
+ .project{
+  &__card{
+    row-gap: 100px;
+  }
+ }
+}
+
+@include media('>phone', '<=tablet'){
+  .project{
+    &__card{
+      width: 300px;
+    }
+
+    &__image{
+      height: 200px;
+      width: 300px;
+    }
+  }
+}
+
+@include media('<=374px'){
+  .project{
+    &__card{
+      width: 270px;
+    }
+
+    &__image{
+      height: 200px;
+      width: 270px;
+    }
   }
 }

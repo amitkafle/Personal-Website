@@ -24,3 +24,49 @@
     font-weight: 500;
   }
 }
+
+
+@include media('>=tablet', '<=985px'){
+  .project{
+    grid-template-columns: repeat(1, 50%);
+    place-items: center;
+    justify-content: center;
+    gap: 80px;
+  }
+}
+
+
+@include media('>phone', '<=tablet'){
+  .projects{
+    &__heading{
+      font-size: 1.8rem;
+      margin-bottom: 30px;
+    }
+  }
+  .project{
+    grid-template-columns: repeat(1, 100%);
+    place-items: center;
+    justify-content: center;
+    gap: 80px;
+  }
+}
+
+@include media('<=374px'){
+  .projects{
+    &__heading{
+      font-size: 1.8rem;
+      margin-bottom: 30px;
+    }
+  }
+  .project{
+    grid-template-columns: repeat(1, 100%);
+    place-items: center;
+    justify-content: center;
+    gap: 80px;
+
+    &__links{
+      justify-content: center;
+      gap: 40px;
+    }
+  }
+}

@@ -41,3 +41,43 @@
     margin-right: 50px;
   }
 }
+
+@include media('>=tablet', '<=985px') { 
+  .home {
+    .btn {
+      margin-right: 20px;
+      padding: 10px 20px;
+    }
+  }
+}
+
+@include media('>phone', '<=tablet'){
+  .btn {
+    padding: 10px 20px;
+  }
+
+  .home{
+    &__buttons{
+      justify-content: space-between;
+    }
+    .btn{
+      margin-right: 0;
+    }
+  }
+}
+
+@include media('<=374px'){
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .home{
+    &__buttons{
+      justify-content: space-between;
+    }
+    .btn{
+      margin-right: 0;
+    }
+  }
+}

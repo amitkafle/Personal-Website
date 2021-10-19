@@ -34,3 +34,52 @@
     color: $clr-neutral;
   }
 }
+
+
+@include media('>=tablet', '<=985px') { 
+  .header{
+    padding: 10px 30px;
+  }
+}
+
+@include media('>phone', '<=tablet'){
+  .header{
+    position: relative;
+    padding: 10px 10px;
+    .logo{
+      font-size: 1.5rem;
+    }
+  }
+
+  .nav{
+    display: none;
+    ul{
+      column-gap: 10px;
+      li{
+      font-size: 1rem;
+    }
+    }
+    
+  }
+}
+
+@include media('<=374px'){
+  .header{
+    position: relative;
+    padding: 10px 10px;
+    .logo{
+      font-size: 1.2rem;
+    }
+  }
+
+  .nav{
+    display: none;
+    ul{
+      column-gap: 10px;
+      li{
+      font-size: 1rem;
+    }
+    }
+    
+  }
+}

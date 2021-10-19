@@ -23,3 +23,52 @@
     }
   }
 }
+
+
+@include media('>=tablet', '<=985px'){
+  .skills{
+    padding: 5px 50px;
+
+    &__card{
+      grid-template-columns: repeat(5, 12.5%);
+    }
+  }
+}
+
+
+@include media('>phone', '<=tablet'){
+  .skills{
+    padding: 5px 50px;
+
+    &__card{
+      grid-template-columns: repeat(2, 50%);
+    }
+  }
+  .skill {
+    img {
+      height: 80px;
+      width: 80px;
+    }
+  }
+}
+
+@include media('<=374px'){
+  .skills{
+    padding: 5px 40px;
+
+    &__heading{
+      font-size: 1.8rem;
+      margin-bottom: 30px;
+    }
+
+    &__card{
+      grid-template-columns: repeat(2, 50%);
+    }
+  }
+  .skill {
+    img {
+      height: 70px;
+      width: 70px;
+    }
+  }
+}

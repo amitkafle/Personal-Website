@@ -5,9 +5,10 @@
   align-items: center;
   justify-items: center;
   padding: 0 100px;
-  height: min(100vh, 750px);
+  height: min(90vh, 700px);
   width: 100%;
   grid-template-columns: 50% 50%;
+
   .intro {
     justify-self: flex-start;
     &__title {
@@ -34,7 +35,96 @@
       height: auto;
       width: 90%;
       max-width: 90%;
-      min-width: 400px;
+      min-width: 250px;
     }
+  }
+}
+
+
+@include media('>=tablet', '<=985px') { 
+    .home{
+      padding: 30px;
+      .intro{
+        &__title{
+          font-size: 2.5rem;
+        }
+        &__tagline{
+          font-size: 1rem;
+        }
+      }
+    }
+}
+
+@include media('>phone', '<=tablet'){
+  .home {
+  display: grid;
+  height: min(90vh, 700px);
+  width: 100%;
+  grid-template-areas: "banner"
+  "intro";
+  grid-template-columns: 100%;
+  place-items: center;
+  padding: 0 40px;
+  .intro{
+    grid-area: intro;
+    justify-self: center;
+    &__title{
+      text-align: center;
+      font-size: 2rem;
+      line-height: 35px;
+      letter-spacing: 0.5px;
+    }
+    &__tagline{
+      text-align: center;
+      font-size: 1rem;
+    }
+  }
+
+  .banner{
+    justify-self: center;
+    grid-area: banner;
+    &__img{
+      height: 280px;
+      width: 280px;
+      
+    }
+  }
+  }
+}
+
+@include media('<=374px'){
+  .home {
+  display: grid;
+  height: min(90vh, 700px);
+  width: 100%;
+  grid-template-areas: "banner"
+  "intro";
+  grid-template-columns: 100%;
+  place-items: center;
+  padding: 0 20px;
+  .intro{
+    grid-area: intro;
+    justify-self: center;
+    &__title{
+      text-align: center;
+      font-size: 1.8rem;
+      line-height: 35px;
+      letter-spacing: 0.5px;
+    }
+    &__tagline{
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  }
+
+  .banner{
+    justify-self: center;
+    grid-area: banner;
+    &__img{
+      height: 250px;
+      width: 250px;
+      
+    }
+  }
   }
 }

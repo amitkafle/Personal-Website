@@ -8,3 +8,23 @@
   display: grid;
   place-items: center;
 }
+
+
+@include media('>phone', '<=tablet'){
+  .footer{
+    height: 60px;
+    font-size: 0.8rem;
+    padding: 0 30px;
+    text-align: center;
+  }
+}
+
+
+@include media('<=374px'){
+  .footer{
+    height: 60px;
+    font-size: 0.8rem;
+    padding: 0 30px;
+    text-align: center;
+  }
+}
