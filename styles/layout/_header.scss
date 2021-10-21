@@ -20,6 +20,13 @@
 }
 
 .nav {
+  &__mobile{
+    display: none;
+    font-size: 1.6rem;
+  }
+  &__close{
+    display: none;
+  }
   ul {
     display: flex;
     flex-direction: row;
@@ -36,7 +43,58 @@
 }
 
 
+@keyframes menu-open {
+  from{
+    top: -500px;
+  }
+  to{
+    top: 58px;
+  }
+}
+
+@keyframes menu-close {
+  from{
+    top: 58px;
+  }
+  to{
+    top: -500px;
+  }
+}
+
+
+@include media('<=tablet'){
+  .nav{
+    display: none;
+    position: absolute;
+    top: 58px;
+    right: 0;
+    background-color: $clr-brand;
+    width: 100vw;
+    border-radius: 0 0 10px 10px;
+    opacity: 0.9;
+    animation: 0.5s ease forwards;
+
+    &__close{
+      display: inline-block;
+    font-size: 2rem;
+    }
+
+    ul{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      li{
+        padding: 10px;
+      }
+    }
+  }
+}
+
+
 @include media('>=tablet', '<=985px') { 
+  .nav__mobile{
+    display: none;
+  }
   .header{
     padding: 10px 30px;
   }
@@ -44,7 +102,6 @@
 
 @include media('>phone', '<=tablet'){
   .header{
-    position: relative;
     padding: 10px 10px;
     .logo{
       font-size: 1.5rem;
@@ -52,20 +109,21 @@
   }
 
   .nav{
-    display: none;
+    
     ul{
       column-gap: 10px;
       li{
       font-size: 1rem;
     }
     }
-    
+    &__mobile{
+      display: inline-block;
+    }
   }
 }
 
 @include media('<=374px'){
   .header{
-    position: relative;
     padding: 10px 10px;
     .logo{
       font-size: 1.2rem;
@@ -73,13 +131,14 @@
   }
 
   .nav{
-    display: none;
     ul{
       column-gap: 10px;
       li{
       font-size: 1rem;
     }
     }
-    
+    &__mobile{
+      display: inline-block;
+    }
   }
 }
