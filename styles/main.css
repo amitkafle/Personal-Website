@@ -254,9 +254,11 @@ a {
 .nav__mobile {
   display: none;
   font-size: 1.6rem;
+  cursor: pointer;
 }
 .nav__close {
   display: none;
+  cursor: pointer;
 }
 .nav ul {
   display: flex;
