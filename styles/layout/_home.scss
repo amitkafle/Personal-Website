@@ -29,7 +29,6 @@
   .banner {
     overflow: hidden;
     display: flex;
-    justify-self: flex-end;
     justify-content: flex-end;
     &__img {
       height: auto;
@@ -81,7 +80,7 @@
   }
 
   .banner{
-    justify-self: center;
+    justify-content: center;
     grid-area: banner;
     &__img{
       height: 280px;

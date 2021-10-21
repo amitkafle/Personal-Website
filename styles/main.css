@@ -338,7 +338,6 @@ a {
 .home .banner {
   overflow: hidden;
   display: flex;
-  justify-self: flex-end;
   justify-content: flex-end;
 }
 .home .banner__img {
@@ -384,7 +383,7 @@ a {
     font-size: 1rem;
   }
   .home .banner {
-    justify-self: center;
+    justify-content: center;
     grid-area: banner;
   }
   .home .banner__img {
