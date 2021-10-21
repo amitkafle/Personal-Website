@@ -70,7 +70,7 @@ a {
     padding: 10px 20px;
   }
 }
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 375px) and (max-width: 768px) {
   .btn {
     padding: 10px 20px;
   }
@@ -118,7 +118,7 @@ a {
     row-gap: 100px;
   }
 }
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 375px) and (max-width: 768px) {
   .project__card {
     width: 300px;
   }
@@ -179,7 +179,7 @@ a {
   width: 50px;
 }
 
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 375px) and (max-width: 768px) {
   .contact__text {
     font-size: 1.2rem;
   }
@@ -215,7 +215,7 @@ a {
   place-items: center;
 }
 
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 375px) and (max-width: 768px) {
   .footer {
     height: 60px;
     font-size: 0.8rem;
@@ -270,7 +270,7 @@ a {
     padding: 10px 30px;
   }
 }
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 375px) and (max-width: 768px) {
   .header {
     position: relative;
     padding: 10px 10px;
@@ -359,7 +359,7 @@ a {
     font-size: 1rem;
   }
 }
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 375px) and (max-width: 768px) {
   .home {
     display: grid;
     height: min(90vh, 700px);
@@ -457,7 +457,7 @@ a {
     gap: 80px;
   }
 }
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 375px) and (max-width: 768px) {
   .projects__heading {
     font-size: 1.8rem;
     margin-bottom: 30px;
@@ -516,7 +516,7 @@ a {
     grid-template-columns: repeat(5, 12.5%);
   }
 }
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 375px) and (max-width: 768px) {
   .skills {
     padding: 5px 50px;
   }
